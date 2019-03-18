@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tesco.offers.account.process</groupId>
+  <artifactId>AccountInfoProcess</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>AccountInfoProcess</name>
+  <description>this is process layer</description>
+  <parent>
+   <groupId>com.tesco.offers.account.parent</groupId>
+  <artifactId>ParentPom</artifactId>
+  <version>1.0-SNAPSHOT</version>
+ </parent>
+  <dependencies>
+  <dependency>
+   <groupId>com.tesco.offers.account.intg</groupId>
+  <artifactId>AccountInfoIntg</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  </dependency>
+  <dependency>
+  <groupId>com.tesco.offers.account.balance</groupId>
+  <artifactId>AccountInfoIntg_BalanceDAO</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+ <groupId>com.tesco.offers.account.feature</groupId>
+  <artifactId>AccountInfoIntg_FeatureDAO</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+<groupId>com.tesco.offers.account.linkedcards</groupId>
+  <artifactId>AccountInfoIntg_LinkedCardsDAO</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  </dependency>
+  <dependency>
+  <groupId>com.tesco.offfers.acount</groupId>
+  <artifactId>CardVerify</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  
+  </dependency>
+  </dependencies>
+</project>
